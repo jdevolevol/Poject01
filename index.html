@@ -3,16 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        p {
-            color: red;
-        }
-    </style>
+    <title>BMI Calculator</title>
 </head>
 <body>
-    <h1>Hello World</h1>
-    <p>chat 1</p>
-    <p>chat 2</p>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <form id="bmiForm">
+            <div class="form-group">
+                <label for="weight">Weight (kg):</label>
+                <input type="text" id="weight">
+            </div>
+            <div class="form-group">
+                <label for="height">Height (cm):</label>
+                <input type="text" id="height">
+            </div>
+            <button class="btn">calculate BMI</button>
+        </form>
+        <p id="result">result</p>
+    </div>
 </body>
 </html>
