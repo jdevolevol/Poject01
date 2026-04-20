@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.container{
+    width: 30rem;
+    max-width: 800px;
+    background: #333;
+    padding: 1rem;
+    color: white;
+    border-radius: 5px;
+}
+h1{
+    font-size: 2rem;
+    text-align: center;
+}
+form{
+    padding: 1rem;
+    font-size: 1.3rem;
+    &>*{
+        padding-bottom: 1.2rem ;
+    }
+}
+input,button{
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 1.5rem;
+}
+.btn{
+    background: #4177f7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+#result{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
