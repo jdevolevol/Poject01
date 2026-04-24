@@ -11,20 +11,25 @@ btn.addEventListener('click', (e) => {
     }else if (height === "" || isNaN(height)) {
         return result.innerHTML = "Please enter a valid height";
     }else{
+        // Calculate BMI
         height = height / 100;
         let bmi = (weight / (height * height)).toFixed(2);
+
+        //Show the result BMI
         if (bmi < 18.5) {
-                return result.innerHTML = `Your BMI is ${bmi} and you are underweight`;
+            showResult(bmi, "underweight", "#676700");
             }else if (bmi >= 18.5 && bmi < 24.9) {
-                return result.innerHTML = `Your BMI is ${bmi} and you are normal weight`; 
+                showResult(bmi, "normal weight", "green"); 
             }else if (bmi >= 25 && bmi < 29.9) {
-                return result.innerHTML = `Your BMI is ${bmi} and you are overweight`;
+                showResult(bmi, "overweight", "orange");
             }else{
-                return result.innerHTML = `Your BMI is ${bmi} and you are obese`;
+                showResult(bmi, "obese", "red");
             }  
     }
-
-    
-
 })
+
+function showResult(bmi,message,color) {
+    result.style.backgroundColor = color;
+    return result.innerHTML = `Your BMI is ${bmi} and you are ${message}`;
+}
 
