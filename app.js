@@ -18,9 +18,9 @@ btn.addEventListener('click', (e) => {
         //Show the result BMI
         if (bmi < 18.5) {
             showResult(bmi, "underweight", "#676700");
-            }else if (bmi >= 18.5 && bmi < 24.9) {
+            }else if (bmi >= 18.5 && bmi < 24.99) {
                 showResult(bmi, "normal weight", "green"); 
-            }else if (bmi >= 25 && bmi < 29.9) {
+            }else if (bmi >= 25 && bmi < 29.99) {
                 showResult(bmi, "overweight", "orange");
             }else{
                 showResult(bmi, "obese", "red");
